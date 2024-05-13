@@ -1,576 +1,262 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-
-:root {
-  --primary-color: #803D3B;
-  --text-dark: #0f172a;
-  --text-light: #4f2e06;
-  --white: #ffffff;
-  --max-width: 1200px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.section__container {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 5rem 1rem;
-}
-
-.section__header {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  text-align: center;
-}
-
-.btn {
-  padding: 1rem 1.5rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-  white-space: nowrap;
-  color: var(--white);
-  background-color: var(--primary-color);
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 2px 10px 20px #f9594751;
-}
-
-img {
-  width: 100%;
-  display: flex;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-}
-
-header {
-  position: relative;
-}
-
-header::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: calc(50% - 15rem);
-  background-color: #f8e7d3;
-  z-index: -1;
-}
-
-nav {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 2rem 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav__logo a {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.nav__links {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-}
-
-.link a {
-  padding: 5px 0;
-  font-weight: 700;
-  color: var(--text-dark);
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
-}
-
-.link a:hover {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.header__container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  align-items: center;
-}
-
-.header__content h4 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-
-.header__content h1 {
-  margin-bottom: 2rem;
-  font-size: 3.75rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.header__content p {
-  margin-bottom: 2rem;
-  color: var(--text-light);
-}
-
-.header__content form {
-  width: 100%;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-}
-
-.header__content input {
-  width: 100%;
-  padding: 0 1rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-}
-
-.header__image {
-  position: relative;
-  padding-right: 2rem;
-}
-
-.header__socials {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.header__socials a {
-  font-size: 1.5rem;
-  color: var(--text-dark);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.header__socials a:hover {
-  color: var(--primary-color);
-}
-
-.header__image img {
-  max-width: 500px;
-  margin: auto;
-}
-
-.work__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.work__card {
-  padding: 2rem;
-  border-radius: 10px;
-  text-align: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-.work__card:hover {
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-}
-
-.work__card span {
-  display: inline-block;
-  margin-bottom: 2rem;
-  padding: 21px 24px;
-  font-size: 2rem;
-  color: var(--white);
-  border-radius: 10px;
-}
-
-.work__card:nth-child(1) span {
-  background-color: #481E14;
-  box-shadow: 2px 10px 40px #481E148c;
-}
-
-.work__card:nth-child(2) span {
-  background-color: #9B3922;
-  box-shadow: 2px 10px 40px #9B39228c;
-}
-
-.work__card:nth-child(3) span {
-  background-color: #F2613F;
-  box-shadow: 2px 10px 40px #F2613F8c;
-}
-
-.work__card h4 {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
-  color: var(--text-dark);
-}
-
-.work__card p {
-  line-height: 1.5rem;
-  color: var(--text-light);
-}
-
-.deals__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.deals__header__content .section__header {
-  max-width: 450px;
-  margin-bottom: 1rem;
-  text-align: left;
-}
-
-.deals__header__content p {
-  max-width: 500px;
-  color: var(--text-light);
-}
-
-.deals__nav {
-  margin-top: 2rem;
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-
-.deals__nav a {
-  padding: 5px 0;
-  font-weight: 700;
-  white-space: nowrap;
-  color: var(--text-dark);
-  border-bottom: 2px solid transparent;
-  transition: 0.3s;
-}
-
-.deals__nav a:hover,
-.deals__nav a.active {
-  color: var(--primary-color);
-  border-color: var(--primary-color);
-}
-
-.deals__grid {
-  margin-top: 2rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.deals__card {
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.deals__card img {
-  border-radius: 5px;
-  transition: 0.3s;
-}
-
-.deals__card:hover img {
-  scale: 1.1;
-}
-
-.deals__card span {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  padding: 0.5rem 1rem;
-  font-size: 0.9rem;
-  color: var(--white);
-  background-color: rgba(0, 0, 0, 0.5);
-  border: 1px solid var(--white);
-  border-radius: 5px;
-}
-
-.featured__grid {
-  margin-top: 4rem;
-  padding: 2rem 1rem;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  background-color: #f8e7d3;
-}
-
-.featured__image {
-  position: relative;
-}
-
-.featured__image img:nth-child(1) {
-  max-width: 500px;
-  margin: auto;
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.featured__image img:nth-child(2) {
-  max-width: 400px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.featured__content {
-  padding: 2rem 0;
-}
-
-.featured__content h4 {
-  margin-bottom: 1rem;
-  font-size: 1.75rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.featured__content p {
-  margin-bottom: 2rem;
-  color: var(--text-light);
-}
-
-.featured__content__grid {
-  margin-bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.featured__content__grid h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.business__container .section__header {
-  max-width: 600px;
-  text-align: left;
-}
-
-.business__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.business__card {
-  padding: 2rem;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-.business__card:hover {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.business__rating {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  color: gold;
-}
-
-.business__card p {
-  margin-bottom: 2rem;
-  color: var(--text-light);
-}
-
-.business__member {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.business__member img {
-  max-width: 40px;
-  border-radius: 100%;
-}
-
-.business__member__details h4 {
-  color: var(--text-dark);
-}
-
-.business__member__details p {
-  margin: 0;
-}
-
-.news__container p {
-  margin: 1rem 0;
-  font-weight: 700;
-  color: var(--text-light);
-  text-align: center;
-}
-
-.news__container form {
-  width: 100%;
-  max-width: 500px;
-  margin: 4rem auto 0;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-}
-
-.news__container input {
-  width: 100%;
-  padding: 0 1rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
-}
-
-.footer__container {
-  display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.footer__col h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.footer__col p {
-  margin-bottom: 1rem;
-  color: var(--text-light);
-}
-
-.footer__col h4 {
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.footer__col a {
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--text-light);
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.footer__col a:hover {
-  color: var(--primary-color);
-}
-
-.footer__col p span {
-  margin-right: 0.5rem;
-  color: var(--primary-color);
-}
-
-.footer__bar {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  font-size: 0.8rem;
-  color: var(--text-dark);
-}
-
-@media (width < 900px) {
-  header::after {
-    content: none;
-  }
-
-  .nav__links {
-    gap: 1rem;
-  }
-
-  .header__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header__content {
-    text-align: center;
-  }
-
-  .header__content form {
-    margin: auto;
-  }
-
-  .header__image {
-    grid-area: 1/1/2/2;
-  }
-
-  .work__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .deals__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .featured__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .featured__image {
-    min-height: 400px;
-  }
-
-  .business__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (width < 600px) {
-  .nav__links {
-    display: none;
-  }
-
-  .work__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .deals__header {
-    flex-direction: column;
-  }
-
-  .deals__header__content :is(.section__header, p) {
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .deals__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .business__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .footer__bar {
-    text-align: center;
-  }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Web Design Property | NYC SALES</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav__logo"><a href="#">New York City Property</a></div>
+            <ul class="nav__links">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#">About</a></li>
+                <li class="link"><a href="#">Dashboard</a></li>
+                <li class="link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="section__container header__container">
+            <div class="header__content">
+                <h4>NYC Property Sales</h4>
+                <h1>New York Commercial & Residential Buildings</h1>
+                <p>This website is a collection of records on the sale of each building or property unit 
+                    in the New York City real estate market with the aim of increasing the value of future sales.
+                </p>
+                <form>
+                    <input type="text" placeholder="Enter Name of Borough">
+                    <button class="btn">Search</button>
+                </form>
+            </div>
+            <div class="header__image">
+                <img src="assets/header.jpg" alt="header">
+                <div class="header__socials">
+                    <a href="#"><i class="ri-facebook-fill"></i></a>
+                    <a href="#"><i class="ri-twitter-fill"></i></a>
+                    <a href="#"><i class="ri-instagram-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section__container work__container">
+        <h2 class="section__header">How It Works?</h2>
+        <div class="work__grid">
+            <div class="work__card">
+                <a href="hiw1.html" class="card__link">
+                <span><i class="ri-search-line"></i></span>
+                <h4>Insights on Average Property Prices by Age and Monthly Sales</h4>
+                <p>
+                    Get an in-depth understanding of average property prices by age and monthly sales volume. 
+                    This information provides valuable insights for buyers, sellers and real estate professionals 
+                    to plan more effective investment strategies and keep up with dynamic property market trends.
+                </p>
+            </div>
+            <div class="work__card">
+                <span><i class="ri-search-line"></i></span>
+                <h4>Property Market Insights</h4>
+                <p>
+                    Discover detailed analysis of property sales trends, average costs and current building prices. With this information, 
+                    you can make smarter decisions when investing or transacting property, and understand market dynamics to optimize your strategy.
+                </p>
+            </div>
+            <div class="work__card">
+                <span><i class="ri-search-line"></i></span>
+                <h4>Total Price Based on Land Area and Categories of Properties Sold</h4>
+                <p>
+                    Find a complete analysis of total property prices by land area and category of properties sold. 
+                    This information helps in understanding the value of properties in different categories and how it relates to land area, 
+                    providing valuable insights for investors to make more informed decisions.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="section__container deals__container">
+        <div class="deals__header">
+            <div class="deals__header__content">
+                <h2 class="section__header">Best Property Deals</h2>
+                <p>
+                    Finding the best property deals requires meticulous research, negotiation skills, 
+                    and a good understanding of market trends.
+                </p>
+            </div>
+            <button class="btn">View All Property</button>
+        </div>
+        <div class="deals__nav">
+            <a href="#" class="active">Commercial Property</a>
+            <a href="#" class=" ">Residential Property</a>
+        </div>
+        <div class="deals__grid">
+            <div class="deals__card">
+                <img src="assets/bangunan1.jpg" alt="deals">
+                <span>Featured</span>
+            </div>
+            <div class="deals__card">
+                <img src="assets/bangunan2.jpg" alt="deals">
+                <span>Featured</span>
+            </div>
+            <div class="deals__card">
+                <img src="assets/bangunan3.jpg" alt="deals">
+                <span>Featured</span>
+            </div>
+        </div>  
+    </section>
+        <section class="section__container featured__container">
+            <h2 class="section__header">Featured Listing Of The Month</h2>
+            <div class="featured__grid">
+            <div class="featured__image">
+                <img src="assets/featured1.jpg" alt="feature" />
+                <img src="assets/featured2.jpg" alt="feature" />
+            </div>
+            <div class="featured__content">
+                <h4>Product Spotlight of the Month & Best Seller Highlight</h4>
+                <p>
+                    The goal of showcasing the most featured properties is to create a sense of urgency, 
+                    exclusivity and increased interest among the target audience, 
+                    ultimately driving more engagement and potential sales.
+                </p>
+                <div class="featured__content__grid">
+                <div class="featured__card">
+                    <h4>Budget</h4>
+                    <p>Confidential</p>
+                </div>
+                <div class="featured__card">
+                    <h4>Size</h4>
+                    <p>1200 m<sup>2</sup></p>
+                </div>
+                <div class="featured__card">
+                    <h4>Type</h4>
+                    <p>Apartment</p>
+                </div>
+                <div class="featured__card">
+                    <h4>Status</h4>
+                    <p>Done</p>
+                </div>
+                <div class="featured__card">
+                    <h4>Location</h4>
+                    <p>Manhattan</p>
+                </div>
+                <div class="featured__card">
+                    <h4>Flat</h4>
+                    <p>3 Room</p>
+                </div>
+                </div>
+                <button class="btn">Booking Apartment Package</button>
+            </div>
+            </div>
+        </section>
+        <section class="section__container business__container">
+            <h2 class="section__header">
+            Loved By Businesses, And Individuals Acress The Globe
+            </h2>
+            <div class="business__grid">
+            <div class="business__card">
+                <div class="business__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-half-fill"></i></span>
+                </div>
+                <p>
+                This property dealing website exceeded my expectations. Its
+                user-friendly interface and powerful search filters made it easy to
+                find my dream home in a short amount of time.
+                </p>
+                <div class="business__member">
+                <img src="assets/people1.jpg" alt="member" />
+                <div class="business__member__details">
+                    <h4>Malik Khafi</h4>
+                    <p>Software Developer</p>
+                </div>
+                </div>
+            </div>
+            <div class="business__card">
+                <div class="business__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                </div>
+                <p>
+                My experience with this property dealing website has been nothing
+                short of fantastic. The website's user-friendly design and intuitive
+                search filters helped me narrow down my choices quickly.
+                </p>
+                <div class="business__member">
+                <img src="assets/people3.jpg" alt="member" />
+                <div class="business__member__details">
+                    <h4>Alexa Shav</h4>
+                    <p>Architect</p>
+                </div>
+                </div>
+            </div>
+            <div class="business__card">
+                <div class="business__rating">
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-fill"></i></span>
+                <span><i class="ri-star-line"></i></span>
+                </div>
+                <p>
+                It saved me time and effort as I could confidently focus on
+                properties that matched my preferences. I appreciate the website's
+                commitment to transparency and honesty.
+                </p>
+                <div class="business__member">
+                <img src="assets/people2.jpg" alt="member" />
+                <div class="business__member__details">
+                    <h4>Raehan Axel</h4>
+                    <p>Business Analyst</p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section__container news__container">
+            <h2 class="section__header">Get Our Newsletter</h2>
+            <p>To join the worldwide community</p>
+            <form action="#">
+            <input type="text" placeholder="Type your email address" />
+            <button class="btn">Send Now</button>
+            </form>
+        </section>
+    
+        <footer class="section__container footer__container">
+            <div class="footer__col">
+            <h3>New York City Property</h3>
+            <p>
+                <span><i class="ri-mail-fill"></i></span> nycsales@gmail.com
+            </p>
+            <p>
+                <span><i class="ri-phone-fill"></i></span> +62 856787654120
+            </p>
+            </div>
+            <div class="footer__col">
+            <h4>About</h4>
+            <a href="#">Home</a>
+            <a href="#">Pricing</a>
+            <a href="#">Company</a>
+            <a href="#">Resource</a>
+            </div>
+            <div class="footer__col">
+            <h4>Features</h4>
+            <a href="#">Blog</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            </div>
+            <div class="footer__col">
+            <h4>Contact</h4>
+            <a href="#">Department</a>
+            <a href="#">Media</a>
+            <a href="#">Support</a>
+            </div>
+        </footer>
+        <div class="footer__bar">
+            Copyright © 2024 Web Design Team11. All rights reserved.
+        </div>
+    </body>
+    </html>
