@@ -1,0 +1,115 @@
+/* stylechart.css */
+
+/* General Styles */
+body {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    color: #d65534;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(90deg, #f8e7d3, #f9d7b8);
+    color: #4f2e06;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #481E14;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a.nav__link {
+    color: #4f2e06;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 20px;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a.nav__link:hover {
+    color: #ffffff;
+    background-color: #481E14;
+    border-radius: 5px;
+}
+
+nav h2.nav__title {
+    font-size: 1.5em;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Section Container */
+.section__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #f8e7d3, #f9d7b8);
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left__section, .right__section {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.left__section {
+    background-color: #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.right__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #481E14;
+    font-weight: bold;
+}
+
+.insight, .recommendations {
+    margin-bottom: 20px;
+}
+
+.insight li, .recommendations li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    line-height: 1.5;
+    color: #481E14;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section__container {
+        grid-template-columns: 1fr;
+    }
+}
