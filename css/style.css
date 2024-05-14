@@ -63,8 +63,8 @@ header::after {
   top: 0;
   right: 0;
   height: 100%;
-  width: calc(50% - 15rem);
-  background-color: #f8e7d3;
+  width: 100%;
+  background-color: #f3ece5;
   z-index: -1;
 }
 
@@ -178,7 +178,7 @@ nav {
 
 .work__grid {
   margin-top: 4rem;
-  display: grid;
+  display: block;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
@@ -573,4 +573,30 @@ nav {
   .footer__bar {
     text-align: center;
   }
+}
+
+/*Style hiw1*/
+
+nav {
+    text-align: center; 
+}
+
+.nav__title {
+    color: black;
+    display: inline-block;
+    pointer-events: none;
+}
+
+.grid__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.left__section {
+    /* Konten kiri */
+}
+
+.right__section {
+    /* Konten kanan */
 }
