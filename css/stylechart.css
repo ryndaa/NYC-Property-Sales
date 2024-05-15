@@ -99,6 +99,8 @@ h4 {
 
 .insight, .recommendations {
     margin-bottom: 20px;
+    text-align: justify;
+    list-style-type: disc;
 }
 
 .insight li, .recommendations li {
