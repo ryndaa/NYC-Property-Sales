@@ -84,6 +84,7 @@ nav h2.nav__title {
 
 .right__section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
