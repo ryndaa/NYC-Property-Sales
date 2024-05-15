@@ -13,13 +13,20 @@ function drawBasic() {
         ['>500K', 91198702, '91,2M'] 
      ]);
 
-      var options = {
+     var options = {
         colors: ['#B67352'],
-        legend: { position: "none" },
+        legend: { position: "top",aligment:'center' },
         title: 'Total Land Area with Price',
+        width : 600,
+        height : 300,
         hAxis: {
           title: 'Land Area Category',
-          }
+          gridlines: { count: -1 }
+          },
+        vAxis: {
+            title: 'Sale Price',
+            format: 'short'
+        }
         };
 
       var chart = new google.visualization.ColumnChart(
