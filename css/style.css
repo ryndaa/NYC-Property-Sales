@@ -1,4 +1,7 @@
+/* Landing Page CSS */
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 
 :root {
   --primary-color: #803D3B;
@@ -356,221 +359,262 @@ nav {
   gap: 1rem;
 }
 
-.featured__content__grid h4 {
-  margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 700;
+.featured__content__grid h5 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+}
+
+.featured__content__grid div {
+  font-size: 1rem;
   color: var(--text-dark);
 }
 
-.business__container .section__header {
-  max-width: 600px;
-  text-align: left;
-}
-
-.business__grid {
-  margin-top: 4rem;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-}
-
-.business__card {
-  padding: 2rem;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
-}
-
-.business__card:hover {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-}
-
-.business__rating {
-  margin-bottom: 2rem;
-  font-size: 1rem;
-  color: gold;
-}
-
-.business__card p {
-  margin-bottom: 2rem;
+.featured__content div {
   color: var(--text-light);
 }
 
-.business__member {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.business__member img {
-  max-width: 40px;
-  border-radius: 100%;
-}
-
-.business__member__details h4 {
-  color: var(--text-dark);
-}
-
-.business__member__details p {
-  margin: 0;
-}
-
-.news__container p {
-  margin: 1rem 0;
-  font-weight: 700;
-  color: var(--text-light);
-  text-align: center;
-}
-
-.news__container form {
-  width: 100%;
-  max-width: 500px;
-  margin: 4rem auto 0;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
-}
-
-.news__container input {
-  width: 100%;
-  padding: 0 1rem;
-  outline: none;
-  border: none;
-  font-size: 1rem;
+.footer {
+  padding: 2rem 1rem;
+  background-color: #f8e7d3;
 }
 
 .footer__container {
   display: grid;
-  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.footer__col h3 {
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-}
-
-.footer__col p {
-  margin-bottom: 1rem;
-  color: var(--text-light);
+.footer__col {
+  max-width: 250px;
 }
 
 .footer__col h4 {
   margin-bottom: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   font-weight: 700;
   color: var(--text-dark);
 }
 
 .footer__col a {
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   color: var(--text-light);
-  cursor: pointer;
   transition: 0.3s;
 }
 
 .footer__col a:hover {
-  color: var(--primary-color);
-}
-
-.footer__col p span {
-  margin-right: 0.5rem;
-  color: var(--primary-color);
-}
-
-.footer__bar {
-  max-width: var(--max-width);
-  margin: auto;
-  padding: 1rem;
-  font-size: 0.8rem;
   color: var(--text-dark);
 }
 
-@media (width < 900px) {
-  header::after {
-    content: none;
-  }
+.footer__row {
+  padding-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .nav__links {
-    gap: 1rem;
-  }
+.footer__row__col p {
+  color: var(--text-light);
+}
 
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer__socials a {
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 1024px) {
   .header__container {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .header__content {
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
-  .header__content form {
-    margin: auto;
+  .header__content h1 {
+    font-size: 3rem;
   }
 
   .header__image {
-    grid-area: 1/1/2/2;
-  }
-
-  .work__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .deals__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .featured__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .featured__image {
-    min-height: 400px;
-  }
-
-  .business__grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-  }
-
-  .footer__container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (width < 600px) {
-  .nav__links {
     display: none;
   }
 
   .work__grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .deals__header {
-    flex-direction: column;
-  }
-
-  .deals__header__content :is(.section__header, p) {
-    text-align: center;
-    max-width: 100%;
+    grid-template-columns: 1fr;
   }
 
   .deals__grid {
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .business__grid {
-    grid-template-columns: repeat(1, 1fr);
+  .featured__grid {
+    grid-template-columns: 1fr;
   }
 
-  .footer__bar {
-    text-align: center;
+  .featured__image img:nth-child(1) {
+    display: none;
+  }
+
+  .featured__image img:nth-child(2) {
+    position: relative;
+    transform: unset;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none;
+  }
+
+  .deals__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__container {
+    grid-template-columns: 1fr;
+  }
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  color: var(--text-dark);
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.team__container {
+  padding: 10rem 0;
+  overflow: hidden;/* Tambahkan overflow: hidden untuk menghilangkan konten yang melebihi batas */
+  position: relative; /* Tambahkan posisi relatif untuk menetapkan posisi absolut pada anak-anaknya */
+}
+
+.team__grid {
+  display: flex;
+  overflow-x: hidden;
+  gap: 2rem; /* Menambahkan jarak antar kartu */
+  width: calc(12 * 300px + 11 * 2rem);
+  animation: moveTeam 35s linear infinite; /* Menerapkan animasi lebih lambat */
+}
+
+@keyframes moveTeam {
+  0% {
+    transform: translateX(0); /* Mulai dari posisi normal */
+  }
+  100% {
+    transform: translateX(calc(-12 * (300px + 2rem))); /* Bergerak ke arah kiri hingga mencapai akhir kartu */
+  }
+}
+
+.team__card {
+  flex: 0 0 auto;
+  min-width: 300px; 
+  background-color: #f8e7d3;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.team__card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Mengatur latar belakang semi-transparent */
+  transition: background-color 0.3s; /* Mengatur transisi efek ketika hover */
+}
+
+.team__card:hover::before {
+  background-color: rgba(0, 0, 0, 0.5); /* Mengatur latar belakang semi-transparent saat hover */
+}
+
+.team__card:hover img {
+  transform: scale(1.1); /* Mengatur efek perbesaran gambar saat hover */
+}
+
+.team__card img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin: 0 auto 1rem;
+  transition: transform 0.3s;
+}
+
+.team__card h4 {
+  font-size: 17px;
+  color: var(--text-dark);
+  margin-bottom: 10px;
+  white-space: nowrap; /* Mencegah pemutusan teks */
+  overflow: hidden; /* Mengatasi teks yang lebih panjang dari lebar kartu */
+  text-overflow: ellipsis; /* Menampilkan tanda ellipsis untuk teks yang terpotong */
+}
+
+.team__card p {
+  font-size: 15px;
+  color: var(--text-light);
+  margin-bottom: 10px;
+  white-space: nowrap; /* Mencegah pemutusan teks */
+  overflow: hidden; /* Mengatasi teks yang lebih panjang dari lebar kartu */
+  text-overflow: ellipsis; /* Menampilkan tanda ellipsis untuk teks yang terpotong */
+}
+
+.team__socials {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.team__socials a {
+  color: var(--text-dark);
+  font-size: 1.25rem;
+  transition: color 0.3s;
+}
+
+.team__socials a:hover {
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .team__grid {
+    flex-wrap: wrap; 
+  }
+  .team__card {
+    flex: 0 0 calc(50% - 1rem); 
   }
 }
