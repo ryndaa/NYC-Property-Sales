@@ -192,6 +192,10 @@ nav {
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: 0.3s;
+   display: flex; /* Menjadikan kartu sebagai flex container */
+  flex-direction: column; /* Menjadikan anak-anak kartu ditumpuk di atas satu sama lain */
+  align-items: center; /* Pusatkan anak-anak kartu secara vertikal */
+  text-align: center;
 }
 
 .work__card:hover {
@@ -223,14 +227,37 @@ nav {
 }
 
 .work__card h4 {
-  margin-bottom: 1rem;
-  font-size: 1.25rem;
+  margin-top: auto;
+  font-size: 17px;
   color: var(--text-dark);
 }
+
+.card__button {
+  padding: 1rem 1.2rem;
+  margin-top: auto;
+  outline: none;
+  border: none;
+  bottom: 100px;
+  font-size: 1rem;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 2px 10px 20px #f9594751;
+}
+
+.card__button:hover {
+  background-color: #6f0f0451; 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
+
 
 .work__card p {
   line-height: 1.5rem;
   color: var(--text-light);
+  font-size: 13px;
+  margin-top: auto;
 }
 
 .deals__header {
@@ -488,6 +515,7 @@ nav {
   }
 }
 
+/*bagian section our team*/
 body {
   font-family: 'Poppins', sans-serif;
   line-height: 1.7;
@@ -565,8 +593,10 @@ body {
 }
 
 .team__card img {
-  border-radius: 50%;
-  max-width: 150px;
+  border-radius: 100%;
+  width: 150px; /* Tetapkan lebar gambar */
+  height: 180px; /* Tetapkan tinggi gambar */
+  object-fit: cover; /* Pastikan gambar tetap proporsional */
   margin: 0 auto 1rem;
   transition: transform 0.3s;
 }
