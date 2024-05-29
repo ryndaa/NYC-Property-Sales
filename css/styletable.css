@@ -1,0 +1,45 @@
+/* styletable.css */
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.table-container {
+    background: #fdfdfd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+    padding: 20px;
+    text-align: center;
+}
+.table-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+td {
+    background-color: #ffe5e5;
+    color: #000;
+}
+th, td {
+    border-radius: 5px;
+}
