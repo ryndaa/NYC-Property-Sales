@@ -1,0 +1,16 @@
+[{
+  "BOROUGH": "Manhattan",
+  "average_sale_price": "18595378.33"
+}, {
+  "BOROUGH": "Brooklyn",
+  "average_sale_price": "1264536.29"
+}, {
+  "BOROUGH": "Queens",
+  "average_sale_price": "913487.35"
+}, {
+  "BOROUGH": "Bronx",
+  "average_sale_price": "842293.47"
+}, {
+  "BOROUGH": "Staten Island",
+  "average_sale_price": "530932.63"
+}]

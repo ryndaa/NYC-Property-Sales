@@ -1,0 +1,21 @@
+[{
+  "borough": "Staten Island",
+  "sum_residential_units": "6999",
+  "sum_commercial_units": "501"
+}, {
+  "borough": "Bronx",
+  "sum_residential_units": "15508",
+  "sum_commercial_units": "690"
+}, {
+  "borough": "Brooklyn",
+  "sum_residential_units": "26657",
+  "sum_commercial_units": "1677"
+}, {
+  "borough": "Queens",
+  "sum_residential_units": "24414",
+  "sum_commercial_units": "4580"
+}, {
+  "borough": "Manhattan",
+  "sum_residential_units": "19538",
+  "sum_commercial_units": "2270"
+}]
