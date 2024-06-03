@@ -1,47 +1,47 @@
 <html>
-<head></head>
-<body>
-<div>
-    <canvas id="myChart"></canvas>
-  </div>
-  
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
+  <head></head>
+  <body>
+    <div>
+      <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
   <script>
-    const ctx = document.getElementById('myChart');
-  
+    const ctx = document.getElementById("myChart");
+
     fetch("bq3.json")
-    .then((res) => res.json())
-    .then((result) => {
-    //    console.log(result);
+      .then((res) => res.json())
+      .then((result) => {
+        //    console.log(result);
 
-    // Mengurutkan data berdasarkan usia properti
-     result.sort((a, b) => a.property_age - b.property_age);
+        // Mengurutkan data berdasarkan usia properti
+        result.sort((a, b) => a.property_age - b.property_age);
 
-    const age = result.map(value => value.property_age)
-    const AveragePrice = result.map(value => value.avg_sale_price)
-    console.log(age);
+        const age = result.map((value) => value.property_age);
+        const AveragePrice = result.map((value) => value.avg_sale_price);
+        console.log(age);
 
-    new Chart(ctx, {
-        type: 'line',
-        data: {
-          labels: age,
-          datasets: [{
-            label: 'Age and Average Price Properties',
-            data: AveragePrice,
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
-          }
-        }
+        new Chart(ctx, {
+          type: "line",
+          data: {
+            labels: age,
+            datasets: [
+              {
+                label: "Age and Average Price Properties",
+                data: AveragePrice,
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true,
+              },
+            },
+          },
+        });
       });
-
-    });
-
   </script>
-  </html>
+</html>
