@@ -1,0 +1,16 @@
+[{
+  "BOROUGH": "Staten Island",
+  "TOTAL_PENJUALAN": "7494"
+}, {
+  "BOROUGH": "Bronx",
+  "TOTAL_PENJUALAN": "16205"
+}, {
+  "BOROUGH": "Brooklyn",
+  "TOTAL_PENJUALAN": "28517"
+}, {
+  "BOROUGH": "Queens",
+  "TOTAL_PENJUALAN": "28986"
+}, {
+  "BOROUGH": "Manhattan",
+  "TOTAL_PENJUALAN": "21800"
+}]
