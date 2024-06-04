@@ -1,4 +1,4 @@
-const ctx = document.getElementById('chart3');
+const cht3 = document.getElementById('chart3');
   
     fetch("json/bq3.json")
     .then((res) => res.json())
@@ -12,7 +12,7 @@ const ctx = document.getElementById('chart3');
     const AveragePrice = result.map(value => value.avg_sale_price)
     console.log(age);
 
-    new Chart(ctx, {
+    new Chart(cht3, {
         type: 'line',
         data: {
           labels: age,

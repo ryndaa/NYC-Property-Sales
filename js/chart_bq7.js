@@ -1,4 +1,4 @@
-const ctx = document.getElementById('chart7');
+const cht7 = document.getElementById('chart7');
 
     fetch("json/bq7.json")
     .then((res) => res.json())
@@ -6,7 +6,7 @@ const ctx = document.getElementById('chart7');
         const BuildingCategory = result.map(value => value.BUILDING_CATEGORY);
         const AveragePrice = result.map(value => value.avg_sale_price);
         console.log(BuildingCategory);
-        new Chart(ctx, {
+        new Chart(cht7, {
             type: 'bar',
             data: {
                 labels: BuildingCategory,  // Kategori bangunan pada sumbu y

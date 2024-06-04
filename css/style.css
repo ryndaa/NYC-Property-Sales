@@ -639,3 +639,17 @@ body {
     flex: 0 0 calc(50% - 1rem);
   }
 }
+
+.ri-arrow-left-line{
+color: #4f2e06;
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-right: 20px;
+  padding: 10px;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+.ri-arrow-left-line:hover{
+  color: #ffffff;
+  background-color: #481E14;
+  border-radius: 5px;
+}
