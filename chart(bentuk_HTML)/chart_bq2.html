@@ -2,7 +2,6 @@
 <head></head>
 <body>
 <div>
-    <h1>test</h1>
     <canvas id="myChart"></canvas>
 </div>
   
@@ -11,7 +10,7 @@
 <script>
     const ctx = document.getElementById('myChart');
 
-    fetch("json/bq2.json")
+    fetch("bq2.json")
     .then((res) => res.json())
     .then((result) => {
         const Borough = result.map(value => value.BOROUGH);
@@ -19,34 +18,36 @@
         console.log(SalePrice);
 
         new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: Borough,  // Kategori bangunan pada sumbu y
-                datasets: [{
-                    label: 'Average Cost (Location)',
-                    data: SalePrice,
-                    borderWidth: 1,
-                }]
+          type: "bar",
+          data: {
+            labels: Borough, // Kategori bangunan pada sumbu y
+            datasets: [
+              {
+                label: "Average Cost (Location)",
+                data: SalePrice,
+                borderWidth: 1,
+              },
+            ],
+          },
+          options: {
+            indexAxis: "y", // Membuat sumbu y sebagai kategori
+            scales: {
+              x: {
+                beginAtZero: true,
+                title: {
+                  display: true,
+                  text: "Sale Price",
+                },
+              },
+              y: {
+                title: {
+                  display: true,
+                  text: "Borough",
+                },
+              },
             },
-            options: {
-                indexAxis: 'y',  // Membuat sumbu y sebagai kategori
-                scales: {
-                    x: {
-                        beginAtZero: true,
-                        title: {
-                            display: true,
-                            text: 'Sale Price'
-                        }
-                    },
-                    y: {
-                        title: {
-                            display: true,
-                            text: 'Borough'
-                        }
-                    }
-                }
-            }
+          },
         });
-    });
-</script>
+      });
+  </script>
 </html>
