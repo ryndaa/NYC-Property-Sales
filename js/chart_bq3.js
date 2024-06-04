@@ -1,16 +1,6 @@
-<html>
-<head></head>
-<body>
-<div>
-    <canvas id="myChart"></canvas>
-  </div>
+const ctx = document.getElementById('chart3');
   
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
-  <script>
-    const ctx = document.getElementById('myChart');
-  
-    fetch("bq3.json")
+    fetch("json/bq3.json")
     .then((res) => res.json())
     .then((result) => {
     //    console.log(result);
@@ -42,6 +32,3 @@
       });
 
     });
-
-  </script>
-  </html>

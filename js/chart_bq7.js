@@ -1,16 +1,6 @@
-<html>
-<head></head>
-<body>
-<div>
-    <canvas id="myChart"></canvas>
-</div>
-  
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-</body>
-<script>
-    const ctx = document.getElementById('myChart');
+const ctx = document.getElementById('chart7');
 
-    fetch("bq7.json")
+    fetch("json/bq7.json")
     .then((res) => res.json())
     .then((result) => {
         const BuildingCategory = result.map(value => value.BUILDING_CATEGORY);
@@ -46,5 +36,3 @@
             }
         });
     });
-</script>
-</html>

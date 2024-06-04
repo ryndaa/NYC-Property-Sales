@@ -2,6 +2,7 @@
 <head></head>
 <body>
 <div>
+    <h1>test</h1>
     <canvas id="myChart"></canvas>
 </div>
   
@@ -10,7 +11,7 @@
 <script>
     const ctx = document.getElementById('myChart');
 
-    fetch("bq2.json")
+    fetch("json/bq2.json")
     .then((res) => res.json())
     .then((result) => {
         const Borough = result.map(value => value.BOROUGH);
