@@ -12,7 +12,7 @@ const cht1 = document.getElementById("chart1");
             labels: Borough, // Kategori bangunan pada sumbu y
             datasets: [
               {
-                label: "TOTAL PENJUALAN",
+                label: "Total Property Sold",
                 data: totalUnit,
                 borderWidth: 1,
               },
@@ -25,13 +25,13 @@ const cht1 = document.getElementById("chart1");
                 beginAtZero: true,
                 title: {
                   display: true,
-                  text: "TOTAL PROPERTY TERJUAL",
+                  text: "Total Sales",
                 },
               },
               y: {
                 title: {
                   display: true,
-                  text: "BOROUGH",
+                  text: "Borough",
                 },
               },
             },
