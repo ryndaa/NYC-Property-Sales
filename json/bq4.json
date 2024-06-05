@@ -1,301 +1,86 @@
 [{
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Desember",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "142"
+  "SALE_DATE": "September 2016",
+  "Manhattan": "140",
+  "Bronx": "441",
+  "Staten_Island": "515",
+  "Brooklynn": "1336",
+  "Queens": "971"
 }, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Desember",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "421"
+  "SALE_DATE": "Oktober 2016",
+  "Manhattan": "72",
+  "Bronx": "399",
+  "Staten_Island": "424",
+  "Brooklynn": "1028",
+  "Queens": "929"
 }, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Desember",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "481"
+  "SALE_DATE": "November 2016",
+  "Manhattan": "77",
+  "Bronx": "373",
+  "Staten_Island": "476",
+  "Brooklynn": "1139",
+  "Queens": "957"
+},
+{
+  "SALE_DATE": "Desember 2016",
+  "Manhattan": "142",
+  "Bronx": "421",
+  "Staten_Island": "481",
+  "Brooklynn": "1348",
+  "Queens": "1066"
+},{
+  "SALE_DATE": "Januari 2017",
+  "Manhattan": "97",
+  "Bronx": "345",
+  "Staten_Island": "455",
+  "Brooklynn": "1179",
+  "Queens": "856"
+},{
+  "SALE_DATE": "Febuari 2017",
+  "Manhattan": "66",
+  "Bronx": "368",
+  "Staten_Island": "394",
+  "Brooklynn": "1096",
+  "Queens": "820"
 }, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Desember",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1349"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Desember",
-  "BOROUGH": "Queens",
-  "total_penjualan": "1066"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "November",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1139"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "November",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "77"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "November",
-  "BOROUGH": "Queens",
-  "total_penjualan": "957"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "November",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "373"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "November",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "476"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Oktober",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1028"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Oktober",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "424"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Oktober",
-  "BOROUGH": "Queens",
-  "total_penjualan": "929"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Oktober",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "72"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "Oktober",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "399"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "September",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1336"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "September",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "441"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "September",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "140"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "September",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "515"
-}, {
-  "SALE_YEARS": "2016",
-  "SALE_MONTH": "September",
-  "BOROUGH": "Queens",
-  "total_penjualan": "971"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Agustus",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "307"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Agustus",
-  "BOROUGH": "Queens",
-  "total_penjualan": "810"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Agustus",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "201"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Agustus",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1018"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Agustus",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "75"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "April",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "408"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "April",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "59"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "April",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1073"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "April",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "420"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "April",
-  "BOROUGH": "Queens",
-  "total_penjualan": "826"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Februari",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "66"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Februari",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "394"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Februari",
-  "BOROUGH": "Queens",
-  "total_penjualan": "820"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Februari",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1096"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Februari",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "368"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Januari",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "345"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Januari",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "455"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Januari",
-  "BOROUGH": "Queens",
-  "total_penjualan": "856"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Januari",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1179"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Januari",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "97"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juli",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1085"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juli",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "66"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juli",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "369"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juli",
-  "BOROUGH": "Queens",
-  "total_penjualan": "871"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juli",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "409"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juni",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "80"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juni",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1440"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juni",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "477"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juni",
-  "BOROUGH": "Queens",
-  "total_penjualan": "1047"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Juni",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "508"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Maret",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "472"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Maret",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "61"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Maret",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "424"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Maret",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1338"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Maret",
-  "BOROUGH": "Queens",
-  "total_penjualan": "1000"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Mei",
-  "BOROUGH": "Staten Island",
-  "total_penjualan": "430"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Mei",
-  "BOROUGH": "Bronx",
-  "total_penjualan": "406"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Mei",
-  "BOROUGH": "Queens",
-  "total_penjualan": "965"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Mei",
-  "BOROUGH": "Manhattan",
-  "total_penjualan": "78"
-}, {
-  "SALE_YEARS": "2017",
-  "SALE_MONTH": "Mei",
-  "BOROUGH": "Brooklyn",
-  "total_penjualan": "1214"
+  "SALE_DATE": "Maret 2017",
+  "Manhattan": "61",
+  "Bronx": "424",
+  "Staten_Island": "472",
+  "Brooklynn": "1338",
+  "Queens": "1000"
+},{
+  "SALE_DATE": "April 2017",
+  "Manhattan": "59",
+  "Bronx": "420",
+  "Staten_Island": "408",
+  "Brooklynn": "1073",
+  "Queens": "826"
+},{
+  "SALE_DATE": "Mei 2017",
+  "Manhattan": "78",
+  "Bronx": "406",
+  "Staten_Island": "430",
+  "Brooklynn": "1214",
+  "Queens": "965"
+},{
+  "SALE_DATE": "Juni 2017",
+  "Manhattan": "80",
+  "Bronx": "477",
+  "Staten_Island": "508",
+  "Brooklynn": "1440",
+  "Queens": "1047"
+},{
+  "SALE_DATE": "Juli 2017",
+  "Manhattan": "66",
+  "Bronx": "369",
+  "Staten_Island": "409",
+  "Brooklynn": "1085",
+  "Queens": "871"
+},{
+  "SALE_DATE": "Agustus 2017",
+  "Manhattan": "75",
+  "Bronx": "307",
+  "Staten_Island": "201",
+  "Brooklynn": "1018",
+  "Queens": "810"
 }]
