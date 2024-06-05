@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="js/script_chart3.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"/>
     <link rel="stylesheet" href="css/stylechart.css">
     <title>Web Design Property | NYC SALES</title>
@@ -35,9 +34,22 @@
         </ul>
         </div>
         <div class="right__section">
-            <div id="chart5"></div>
-            <div id="chart6"></div>
+            
+            <table class="table table-striped">
+                <tr  class="bg-info">
+                    <th data-column="name" data-order="desc">Borough &#9650</th>
+                    <th data-column="age" data-order="desc">Residential Units &#9650</th>
+                    <th data-column="birthdate" data-order="desc">Commercial Units &#9650</th>
+                </tr>
+            
+                <tbody id="chart6">
+                    
+                </tbody>
+            </table>
         </div>
-    </div>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/chart_bq6.js"></script>   
+
 </body>
 </html>
