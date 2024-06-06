@@ -20,15 +20,15 @@ fetch("json/bq5.json")
 
             // Tentukan kategori untuk nilai area tanah
             let category = '';
-            if (landSquareFeet < 10000) {
+            if (landSquareFeet < 1000) {
                 categories['1. < 10K'] += salePrice;
-            } else if (landSquareFeet < 30000) {
+            } else if (landSquareFeet < 3000) {
                 categories['2. 10 - 30K'] += salePrice;
-            } else if (landSquareFeet < 50000) {
+            } else if (landSquareFeet < 5000) {
                 categories['3. 30 - 50K'] += salePrice;
-            } else if (landSquareFeet < 100000) {
+            } else if (landSquareFeet < 10000) {
                 categories['4. 50 - 100K'] += salePrice;
-            } else if (landSquareFeet <= 500000) {
+            } else if (landSquareFeet <= 50000) {
                 categories['5. 100-500K'] += salePrice;
             } else {
                 categories['6. >500K'] += salePrice;
