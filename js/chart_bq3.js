@@ -3,7 +3,6 @@ const cht3 = document.getElementById('chart3');
     fetch("json/bq3.json")
     .then((res) => res.json())
     .then((result) => {
-    //    console.log(result);
 
     // Mengurutkan data berdasarkan usia properti
      result.sort((a, b) => a.property_age - b.property_age);
