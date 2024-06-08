@@ -65,7 +65,7 @@
             </div>
         </div>
     </section>
-    <section class="section__container deals__container">
+    <section id="deals_section" class="section__container deals__container">
         <div class="deals__header">
             <div class="deals__header__content">
                 <h2 class="section__header">Best Property Deals</h2>
@@ -90,6 +90,20 @@
                 <span>Brooklyn</span>
             </div>
         </div>
+        <script>
+            document.getElementById('actionSelect').addEventListener('change', function() {
+                var actionSelect = this.value;
+                window.select.href = 'moredetails.html?select=' + selectedAction;
+            });
+    
+
+            document.querySelectorAll('.deals__card').forEach(function(card) {
+                card.addEventListener('click', function() {
+                    var actionSelect = this.querySelector('span').textContent.toLowerCase();
+                    window.select.href = 'moredetails.html?select=' + select;
+                });
+            });
+        </script>
     </section>
     <section id="work_team" class="section__container team__container">
         <h2 class="section__header">Meet Our Team</h2>
@@ -205,7 +219,7 @@
                 </div>
             </div>
             <div class="team__card">
-                <img src="assets/people3.jpg" alt="team">
+                <img src="assets/Firman Hasani Putra.jpg" alt="team">
                 <h4>Firman Hasani Putra</h4>
                 <p>Data Visualization - Quality Assurance</p>
                 <div class="team__socials">
