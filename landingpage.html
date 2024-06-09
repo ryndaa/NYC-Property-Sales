@@ -252,29 +252,38 @@
         </div>
         <div class="footer__col">
             <h4>Contact Us</h4>               
-            <form autocomplete="off">
+            <form id="contact" autocomplete="off">
                 <div class="input-container">
-                  <input type="text" name="name" class="input" />
+                  <input type="text" id="name" name="name" class="input"  required/>
                   <label for="">Name</label>
                   <span>Name</span>
                 </div>
                 <div class="input-container">
-                  <input type="email" name="email" class="input" />
+                  <input type="email" id="email" name="email" class="input"  required />
                   <label for="">Email</label>
                   <span>Email</span>
                 </div>
                 <div class="input-container">
-                  <input type="number" name="phone" class="input" />
+                  <input type="number" id="phone" name="phone" class="input"  required/>
                   <label for="">Phone</label>
                   <span>Phone</span>
                 </div>
                 <div class="input-container textarea">
-                  <textarea name="message" class="input"></textarea>
+                  <textarea name="message" id="message" class="input"  required></textarea>
                   <label for="">Message</label>
                   <span>Message</span>
                 </div>
-                <input type="submit" value="Send" id="submit" class="btn" />
+                <button type="submit" id="submit" class="btn">Submit</button>
               </form>
+                <div id="customModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close-button" id="closeModal">&times;</span>
+                        <p id="formData">Do you want to proceed?</p>
+            <button id="confirmButton" class="button confirm-button">Yes</button>
+            <button id="cancelButton" class="button cancel-button">No</button>
+                    </div>
+                </div>
+            
         </div>
     </footer>
     <div class="footer__bar">
